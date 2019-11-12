@@ -1,0 +1,58 @@
+{
+  "name": "slakbal/gotowebinar",
+  "description": "GotoWebinar API wrapper for laravel 5+",
+  "license": "MIT",
+  "keywords": [
+    "gotowebinar",
+    "webinar",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Leslie Price",
+      "email": "leslie.price78@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "nategood/httpful": "^0.2",
+    "illuminate/support": "6.5.0",
+    "guzzlehttp/guzzle": "~6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5|^8.0",
+    "orchestra/testbench": "~3.8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slakbal\\Gotowebinar\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Slakbal\\Gotowebinar\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Slakbal\\Gotowebinar\\GotoWebinarServiceProvider"
+      ],
+      "aliases": {
+        "Webinars": "Slakbal\\Gotowebinar\\Facade\\Webinars",
+        "Registrants": "Slakbal\\Gotowebinar\\Facade\\Registrants",
+        "Attendees": "Slakbal\\Gotowebinar\\Facade\\Attendees",
+        "Sessions": "Slakbal\\Gotowebinar\\Facade\\Sessions"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
