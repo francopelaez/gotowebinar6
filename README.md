@@ -1,4 +1,4 @@
-# GotoWebinar API wrapper for Laravel
+# GotoWebinar API wrapper for Laravel (Laravel 6 Compatible)
 
 This package is a GotoWebinar API service wrapper and facade for Laravel 5.4+.
 
